@@ -1,4 +1,4 @@
-# OpenAI-SMBToolkit: Scalable, Ethical AI Infrastructure for U.S. Businesses
+# Open Acess-SMBToolkit: Scalable, Ethical AI Infrastructure for U.S. Businesses
 
 Welcome to the **OpenAI-SMBToolkit**, an open-access initiative to empower U.S.-based small and mid-sized businesses (SMBs) with scalable, ethical, and secure AI capabilities. This project is aimed to democratize personalization, fraud mitigation, and experimentation for digital commerce and messaging platforms.
 
