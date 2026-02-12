@@ -1,104 +1,67 @@
-# Open Acess-SMBToolkit: Scalable, Ethical AI Infrastructure for U.S. Businesses
+# OpenAI-SMBToolkit (AI Infrastructure for SMBs)
 
-Welcome to the **OpenAI-SMBToolkit**, an open-access initiative to empower U.S.-based small and mid-sized businesses (SMBs) with scalable, ethical, and secure AI capabilities. This project is aimed to democratize personalization, fraud mitigation, and experimentation for digital commerce and messaging platforms.
+**OpenAI-SMBToolkit** is an open, privacy-first, CPU-friendly AI infrastructure toolkit that helps small and mid-sized organizations:
+1) detect and mitigate automated abuse (Fraud Detection & Anomaly Monitoring),
+2) run statistically valid experiments (Experimentation & Causal Inference), and
+3) deliver responsible personalization (Personalization & Ranking).
 
----
+This repository is designed as an implementation-oriented reference with runnable notebooks, demo code, and architecture artifacts.
+It is intentionally modular so that organizations can adopt components incrementally.
 
-## 📊 Project Status Tracker
+## Repository Structure
 
-| Task | Status |
-|------|--------|
-| Architecture diagram published | ✅ Done |
-| Whitepaper outline created | ✅ Done |
-| Executive Order mapping added | ✅ Done |
-| NIST RMF mapping (in progress) | ⏳ In progress |
-| GitHub API prototype | 🔲 Planned |
-| First pilot deployment | 🔲 Target: Q2 2025 |
+- `docs/architecture/` — architecture diagrams and technical specification PDFs
+- `docs/repo/` — repository documentation for evidentiary packaging (NIW/RFE exhibit)
+- `notebooks/` — Jupyter notebooks demonstrating each module end-to-end
+- `src/` — minimal, readable implementation code used by notebooks
+- `data/` — synthetic datasets (no real user data)
 
+## Modules
 
-## 📌 Project Modules
+### 1) Fraud Detection & Real-Time Anomaly Monitoring
+- Streaming-compatible feature extraction (velocity, entropy, deviation)
+- Unsupervised baseline using Isolation Forest
+- Dynamic thresholding, drift monitoring, and risk-tier routing
 
-### 1. Cohort-Based Recommender System
+See: `notebooks/01_fraud_detection_demo.ipynb`
 
-* **Tech Stack**: Python, scikit-learn, pandas, xgboost
-* **Purpose**: Personalizes product or content recommendations using interpretable cohort-based segmentation
-* **Features**:
+### 2) Experimentation & Causal Inference Toolkit
+- Deterministic assignment and exposure logging
+- SRM (sample ratio mismatch) detection
+- Confidence intervals, power analysis, sequential testing controls
+- Uplift / CATE estimation (T-learner baseline)
 
-  * RFM segmentation
-  * Lightweight ranking models
-  * Local deployment or API-ready design
+See: `notebooks/02_experimentation_toolkit_demo.ipynb`
 
-### 2. Fraud Detection & Anomaly Pipeline
+### 3) Personalization & Responsible Ranking Engine
+- Candidate generation + feature representation
+- CPU-first ranking (GBDT baseline)
+- Calibration concepts + uplift-aware and fairness-aware re-ranking
 
-* **Tech Stack**: Prophet, IsolationForest, NumPy, Streamlit (dashboard demo)
-* **Purpose**: Identifies bot traffic, rate-limit abuse, and messaging anomalies
-* **Features**:
+See: `notebooks/03_personalization_ranking_demo.ipynb`
 
-  * Time series anomaly modeling
-  * Session and behavioral pattern analysis
-  * Plug-and-play fraud scoring function
+### 4) Cross-Module Integration
+- Using fraud signals as experiment guardrails
+- Using uplift estimates for personalization re-ranking
+- Unified governance/audit artifacts
 
-### 3. Uplift Modeling Toolkit
+See: `notebooks/04_end_to_end_integration.ipynb`
 
-* **Tech Stack**: causalml, econml, matplotlib
-* **Purpose**: Empowers ethical experimentation with uplift modeling and causal impact analysis
-* **Features**:
+## Quickstart
 
-  * A/B simulation engine
-  * Covariate balancing diagnostics
-  * Power calculation and MDE visualizations
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+jupyter lab
+```
 
-### 📁 Notebooks
+## Data & Privacy
+All datasets in this repository are synthetic. No raw identifiers are stored. Identifiers shown are hashed placeholders.
 
-- [🧪 Recommender System Demo](notebooks/demo_recommender_system.ipynb)
-- [🔍 Fraud Detection Simulation](notebooks/demo_fraud_detection.ipynb)
-- [📈 Uplift Modeling Demo](notebooks/demo_uplift_modeling.ipynb)
+## License
+This project is released under the Apache 2.0 License. See `LICENSE`.
 
-
----
-
-## 🏗 Deployment & Access
-
-This toolkit is designed for **low-code integration** by digital SMB platforms. A cloud-deployable version is underway, with endpoints offered via REST API and HuggingFace Spaces in 2025.
-
----
-
-## 🔍 Use Cases
-
-* Ecommerce businesses seeking interpretable product recommendations
-* Communication platforms mitigating bot-based abuse or fraud
-* Marketers running statistically valid, bias-aware experiments
-
----
-
-## 🧭 Roadmap
-
-* ✅ Architecture and mock system sketch (2024)
-* 🔄 Public GitHub prototype (Q4 2024)
-* 📄 Whitepaper publication and API release (Q1 2025): [View the full whitepaper outline](docs/WHITEPAPER_OUTLINE.md)
-
-
----
-
-## ⚖️ Governance & Ethics
-
-All modules follow NIST AI RMF and FTC guidelines for trustworthy AI, including transparency, explainability, and reproducibility.
-- [Executive Order Mapping (EO 14110)](docs/EXECUTIVE_ORDER_MAPPING.md)
-- [NIST AI Risk Management Framework Alignment](docs/NIST_ALIGNMENT.md)
-
-
-
----
-
-## 📫 Contact
-
-📬 Interested in piloting a module?  
-[👉 Fill out the pilot interest form](https://forms.gle/x31BqHsqbebdkb859)
-
-
-
-**Lead Developer & Architect:** Prerna Asthana
-Data Scientist & AI Strategist
-[LinkedIn](https://www.linkedin.com/in/prerna-asthana) 
-
----
+## Citation / Exhibit Note
+For immigration evidentiary packaging, see:
+`docs/repo/OpenAI-SMBToolkit_Repository_Documentation_and_Technical_Assets.md`
