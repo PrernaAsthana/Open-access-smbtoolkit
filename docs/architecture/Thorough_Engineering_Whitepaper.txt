@@ -1,0 +1,1 @@
+Attach the full technical architecture specification PDF/Docx to your RFE packet as Exhibit X. Optionally store a PDF export of the v7 document in this folder for easy citation.
