@@ -1,6 +1,6 @@
-# OpenAI-SMBToolkit (AI Infrastructure for SMBs)
+# Open Access-SMBToolkit (AI Infrastructure for SMBs)
 
-**OpenAI-SMBToolkit** is an open, privacy-first, CPU-friendly AI infrastructure toolkit that helps small and mid-sized organizations:
+**Open Access-SMBToolkit** is an open, privacy-first, CPU-friendly AI infrastructure toolkit that helps small and mid-sized organizations:
 1) detect and mitigate automated abuse (Fraud Detection & Anomaly Monitoring),
 2) run statistically valid experiments (Experimentation & Causal Inference), and
 3) deliver responsible personalization (Personalization & Ranking).
@@ -64,4 +64,4 @@ This project is released under the Apache 2.0 License. See `LICENSE`.
 
 ## Citation / Exhibit Note
 For immigration evidentiary packaging, see:
-`docs/repo/OpenAI-SMBToolkit_Repository_Documentation_and_Technical_Assets.md`
+`docs/repo/OpenAccess-SMBToolkit_Repository_Documentation_and_Technical_Assets.md`
