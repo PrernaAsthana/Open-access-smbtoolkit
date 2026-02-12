@@ -1,7 +1,7 @@
-# OpenAI-SMBToolkit  
+# OpenAccess-SMBToolkit  
 ## Privacy-First AI Infrastructure for Small and Mid-Sized Organizations
 
-OpenAI-SMBToolkit is a modular, CPU-friendly, privacy-preserving AI infrastructure framework designed to help organizations:
+OpenAccess-SMBToolkit is a modular, CPU-friendly, privacy-preserving AI infrastructure framework designed to help organizations:
 
 1. Detect and mitigate automated abuse (Fraud Detection & Anomaly Monitoring)
 2. Run statistically valid experiments (Experimentation & Causal Inference Toolkit)
