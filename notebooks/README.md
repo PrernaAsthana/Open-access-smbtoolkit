@@ -1,6 +1,6 @@
-# 📓 Notebooks Directory – OpenAI-SMBToolkit
+# 📓 Notebooks Directory – OpenAccess-SMBToolkit
 
-This folder contains demo notebooks showcasing the core modules of the OpenAI-SMBToolkit. These notebooks are designed for educational and prototyping purposes, aligned with the broader goal to develop open, secure, and ethical AI infrastructure for U.S. small and mid-sized businesses (SMBs).
+This folder contains demo notebooks showcasing the core modules of the OpenAcess-SMBToolkit. These notebooks are designed for educational and prototyping purposes, aligned with the broader goal to develop open, secure, and ethical AI infrastructure for U.S. small and mid-sized businesses (SMBs).
 
 ---
 
